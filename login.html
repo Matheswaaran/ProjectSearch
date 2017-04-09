@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Starter Template - Materialize</title>
+    <title>SignIn / SignUp</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -11,96 +11,107 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
   <body>
-  <div class="row">
-  <div class="col s12 m3"></div>
-   <div class="col s12 m6">
-   <div class="card blue">
-    <div class="card-content white-text">
-      <p><h4>Login or Regiter to continue.</h4></p>
-    </div>
-    <div class="card-tabs">
-      <ul class="tabs tabs-fixed-width tabs-transparent">
-        <li class="tab"><a class="active" href="#log">Login</a></li>
-        <li class="tab"><a href="#reg">Register</a></li>
-      </ul>
-    </div>
-    <div class="card-content blue lighten-5">
-      
-      <!-- Login Tab -->
-      <div id="log">
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email" data-error="Invalid Email" data-success="right">Email</label>
-              </div>
-              <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-              </div>
-              <div class="input-field col s8"></div>
-              <div class="input-field col s4">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Login
-                <i class="material-icons right">send</i>
-              </button>
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="login.html">Administrative Login</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="login.html">Administrative Login</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav><br><br>
+    <div class="row">
+    <div class="col s12 m3"></div>
+      <div class="col s12 m6">
+        <div class="card blue">
+          <div class="card-content white-text">
+            <p><h4>Login or Regiter to continue.</h4></p>
+          </div>
+          <div class="card-tabs">
+            <ul class="tabs tabs-fixed-width tabs-transparent">
+              <li class="tab"><a class="active" href="#log">Login</a></li>
+              <li class="tab"><a href="#reg">Register</a></li>
+            </ul>
+          </div>
+          <div class="card-content blue lighten-5">
+            
+            <!-- Login Tab -->
+            <div id="log">
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email" data-error="Invalid Email" data-success="right">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="password" type="password" class="validate">
+                      <label for="password">Password</label>
+                    </div>
+                    <div class="input-field col s8"></div>
+                    <div class="input-field col s4">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                      <i class="material-icons right">send</i>
+                    </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-          </form>
+
+            <!-- Register Tab -->
+            <div id="reg">
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="first_name" type="text" class="validate">
+                      <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate">
+                      <label for="last_name">Last Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="username" type="text" class="validate">
+                      <label for="username">UserName</label>
+                    </div>
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="repassword" type="password" class="validate">
+                    <label for="repassword">Retype - Password</label>
+                  </div>
+                  <div class="input-field col s8"></div>
+                    <div class="input-field col s4">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Register
+                      <i class="material-icons right">send</i>
+                    </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Register Tab -->
-      <div id="reg">
-        <div class="row">
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
-                <label for="first_name">First Name</label>
-              </div>
-              <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-              </div>
-              <div class="input-field col s12">
-                <input id="username" type="text" class="validate">
-                <label for="username">UserName</label>
-              </div>
-            <div class="input-field col s12">
-              <input id="email" type="email" class="validate">
-              <label for="email">Email</label>
-            </div>
-            <div class="input-field col s12">
-              <input id="password" type="password" class="validate">
-              <label for="password">Password</label>
-            </div>
-            <div class="input-field col s12">
-              <input id="repassword" type="password" class="validate">
-              <label for="repassword">Retype - Password</label>
-            </div>
-            <div class="input-field col s8"></div>
-              <div class="input-field col s4">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Register
-                <i class="material-icons right">send</i>
-              </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
-  </div>
 
-    <!-- <footer class="page-footer orange">
+    <footer class="page-footer orange">
       <div class="footer-copyright">
         <div class="container">
         Made by <a class="orange-text text-lighten-3" href="">Materialize</a>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
 
     <!--  Scripts-->
