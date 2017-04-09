@@ -40,14 +40,14 @@
             <!-- Login Tab -->
             <div id="log">
               <div class="row">
-                <form class="col s12">
+                <form class="col s12" action="php/login.php" method="post">
                   <div class="row">
                     <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
+                      <input id="email" name="email" type="email" class="validate">
                       <label for="email" data-error="Invalid Email" data-success="right">Email</label>
                     </div>
                     <div class="input-field col s12">
-                      <input id="password" type="password" class="validate">
+                      <input id="password" name="password" type="password" class="validate">
                       <label for="password">Password</label>
                     </div>
                     <div class="input-field col s8"></div>
@@ -64,30 +64,30 @@
             <!-- Register Tab -->
             <div id="reg">
               <div class="row">
-                <form class="col s12">
+                <form class="col s12" action="php/register.php" method="post">
                   <div class="row">
                     <div class="input-field col s6">
-                      <input id="first_name" type="text" class="validate">
+                      <input id="first_name" name="first_name" type="text" class="validate">
                       <label for="first_name">First Name</label>
                     </div>
                     <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
+                      <input id="last_name" name="last_name" type="text" class="validate">
                       <label for="last_name">Last Name</label>
                     </div>
                     <div class="input-field col s12">
-                      <input id="username" type="text" class="validate">
+                      <input id="username" name="username" type="text" class="validate">
                       <label for="username">UserName</label>
                     </div>
                   <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
+                    <input id="email" name="email" type="email" class="validate">
                     <label for="email">Email</label>
                   </div>
                   <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
+                    <input id="password" name="password" type="password" class="validate">
                     <label for="password">Password</label>
                   </div>
                   <div class="input-field col s12">
-                    <input id="repassword" type="password" class="validate">
+                    <input id="repassword" name="repassword" type="password" class="validate">
                     <label for="repassword">Retype - Password</label>
                   </div>
                   <div class="input-field col s8"></div>

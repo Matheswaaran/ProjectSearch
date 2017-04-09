@@ -1,3 +1,7 @@
+<?php
+  include 'php/includes/session.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,6 +26,8 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav><br><br>
+
+    <?php echo $_SESSION['username'] ?>
     
     <!-- Footer -->
     <footer class="page-footer orange">
@@ -31,7 +37,7 @@
         </div>
       </div>
     </footer>
-    
+
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
