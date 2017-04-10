@@ -27,7 +27,7 @@
       </div>
     </nav><br><br>
 
-    <?php echo $_SESSION['username'] ?>
+    <?php echo $_SESSION['login_user'] ?>
     
     <!-- Footer -->
     <footer class="page-footer orange">
