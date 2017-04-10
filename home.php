@@ -18,16 +18,16 @@
     <nav class="light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="login.html">Administrative Login</a></li>
+          <li>Welcome <?php echo $_SESSION['login_user']; ?></li>
+          <li><a href="php/logout.php">Logout</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="login.html">Administrative Login</a></li>
+          <li>Welcome <?php echo $_SESSION['login_user']; ?></li>
+          <li><a href="php/logout.php">Logout</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav><br><br>
-
-    <?php echo $_SESSION['login_user'] ?>
     
     <!-- Footer -->
     <footer class="page-footer orange">
