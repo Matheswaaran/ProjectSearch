@@ -17,7 +17,7 @@
 	}else{
 		if ($password == $repassword) {
 			$password = md5($password);
-			$reg_query = "INSERT INTO admin_table(first_name,last_name,username,password,emailid) VALUES('$first_name','$last_name','$username','$password','$emailid')";
+			$reg_query = "INSERT INTO admin_table(first_name,last_name,username,password,emailid) VALUES('$first_name','$last_name','$username','$password','$email')";
 			if (mysqli_query($con, $reg_query) == true ) {
 				echo '<script> alert("Registration Successful");</script>';
 				$_SESSION['username'] = $username;
