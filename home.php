@@ -15,20 +15,34 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   </head>
   <body>
-    <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li>Welcome <?php echo $_SESSION['login_user']; ?></li>
+    <nav class="nav-extended light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>Welcome <?php echo $_SESSION['login_user'];?></li>
           <li><a href="php/logout.php">Logout</a></li>
         </ul>
-        <ul id="nav-mobile" class="side-nav">
-          <li>Welcome <?php echo $_SESSION['login_user']; ?></li>
+        <ul class="side-nav" id="mobile-demo">
+          <li>Welcome <?php echo $_SESSION['login_user'];?></li>
           <li><a href="php/logout.php">Logout</a></li>
         </ul>
-        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
-    </nav><br><br>
-    
+      <div class="nav-content container">
+        <ul class="tabs tabs-transparent">
+          <li class="tab"><a href="#create">Create</a></li>
+          <li class="tab"><a href="#search">Search</a></li>
+          <li class="tab"><a href="#settings">Settings</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col s2"></div>
+      <div id="create" class="col s8">Test 1</div>
+      <div id="search" class="col s8">Test 2</div>
+      <div id="settings" class="col s8">Test 3</div>
+    </div>
     <!-- Footer -->
     <footer class="page-footer orange">
       <div class="footer-copyright">
