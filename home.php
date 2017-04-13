@@ -39,7 +39,77 @@
 
     <div class="row">
       <div class="col s2"></div>
-      <div id="create" class="col s8">Test 1</div>
+
+      <!-- Create -->
+      <div id="create" class="col s8">
+        <form method="post" action="">
+          <table class="bordered">
+            <thead>
+              <th><h4>Create a Project</h4></th>  
+            </thead>
+            <tbody>
+              <tr>
+                <td>Project Title</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="title" name="title" type="text" required="" aria-required="true" class="validate" autofocus>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Team Name</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="team_name" name="team_name" type="text" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Department</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="department" name="department" type="text" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Academic Year</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="year" name="year" type="number" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="description" name="description" class="materialize-textarea"></textarea>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Project Coordinator</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="coordinator" name="coordinator" type="text" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <div class="input-field col s6">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Create
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
       <div id="search" class="col s8">Test 2</div>
       <div id="settings" class="col s8">Test 3</div>
     </div>
