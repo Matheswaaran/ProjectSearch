@@ -42,7 +42,7 @@
 
       <!-- Create -->
       <div id="create" class="col s8">
-        <form method="post" action="">
+        <form method="post" action="php/create.php">
           <table class="bordered">
             <thead>
               <th><h4>Create a Project</h4></th>  
