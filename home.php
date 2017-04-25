@@ -154,7 +154,7 @@
                 <td>Team Member 3</td>
                 <td>
                   <div class="input-field col s12">
-                    <textarea id="tm3" name="tm3" class="materialize-textarea"></textarea>
+                    <input id="tm3" name="tm3" type="text" required="" aria-required="true" class="validate">
                   </div>
                 </td>
               </tr>
