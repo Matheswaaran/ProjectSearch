@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Apr 10, 2017 at 10:31 AM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.6.28
+-- Host: localhost
+-- Generation Time: Apr 24, 2017 at 07:22 PM
+-- Server version: 10.1.21-MariaDB
+-- PHP Version: 5.6.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -35,9 +35,8 @@ CREATE TABLE IF NOT EXISTS `admin_table` (
   `username` varchar(20) NOT NULL,
   `password` varchar(70) NOT NULL,
   `emailid` varchar(20) NOT NULL,
-  `Created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`aid`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `Created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `admin_table`
@@ -61,8 +60,7 @@ CREATE TABLE IF NOT EXISTS `project_table` (
   `Description` text NOT NULL,
   `Project_coordinator` varchar(40) NOT NULL,
   `Created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `Modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`pid`)
+  `Modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -73,14 +71,11 @@ CREATE TABLE IF NOT EXISTS `project_table` (
 
 CREATE TABLE IF NOT EXISTS `team_table` (
   `tid` int(11) NOT NULL AUTO_INCREMENT,
+  `Team_name` varchar(50) NOT NULL,
   `Team_Leader` varchar(20) NOT NULL,
   `Team_Member1` varchar(20) NOT NULL,
   `Team_Member2` varchar(20) NOT NULL,
   `Team_Member3` varchar(20) NOT NULL,
-  `Created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`tid`)
+  `coordinator` varchar(50) NOT NULL,
+  `Created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

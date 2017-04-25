@@ -30,7 +30,8 @@
       </div>
       <div class="nav-content container">
         <ul class="tabs tabs-transparent">
-          <li class="tab"><a href="#create">Create</a></li>
+          <li class="tab"><a href="#project">Create Project</a></li>
+          <li class="tab"><a href="#team">Create Team</a></li>
           <li class="tab"><a href="#search">Search</a></li>
           <li class="tab"><a href="#settings">Settings</a></li>
         </ul>
@@ -40,9 +41,9 @@
     <div class="row">
       <div class="col s2"></div>
 
-      <!-- Create -->
-      <div id="create" class="col s8">
-        <form method="post" action="php/create.php">
+      <!-- Create Project-->
+      <div id="project" class="col s8">
+        <form method="post" action="php/createProj.php">
           <table class="bordered">
             <thead>
               <th><h4>Create a Project</h4></th>  
@@ -99,9 +100,78 @@
               <tr>
                 <td></td>
                 <td>
-                  <div class="input-field col s6">
-                      <button class="btn waves-effect waves-light" type="submit" name="action">Create
-                      <i class="material-icons right">send</i>
+                  <div class="input-field col s7">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Create Project
+                      <i class="material-icons right">done</i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+      <div id="team" class="col s8">
+        <form method="post" action="php/createTeam.php">
+          <table class="bordered">
+            <thead>
+              <th><h4>Create a Team</h4></th>  
+            </thead>
+            <tbody>
+              <tr>
+                <td>Team Name</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="tn" name="tn" type="text" required="" aria-required="true" class="validate" autofocus>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Team Leader</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="tl" name="tl" type="text" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Team Member 1</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="tm1" name="tm1" type="text" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Team Member 2</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="tm2" name="tm2" type="text" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Team Member 3</td>
+                <td>
+                  <div class="input-field col s12">
+                    <textarea id="tm3" name="tm3" class="materialize-textarea"></textarea>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Project Coordinator</td>
+                <td>
+                  <div class="input-field col s12">
+                    <input id="coordinator" name="coordinator" type="text" required="" aria-required="true" class="validate">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <div class="input-field col s7">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Create Team
+                      <i class="material-icons right">done</i>
                     </button>
                   </div>
                 </td>
