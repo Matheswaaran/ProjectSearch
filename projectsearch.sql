@@ -29,7 +29,7 @@ USE `projectsearch`;
 --
 
 CREATE TABLE IF NOT EXISTS `admin_table` (
-  `aid` int(11) NOT NULL AUTO_INCREMENT,
+  `aid` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `first_name` varchar(20) NOT NULL,
   `last_name` varchar(20) NOT NULL,
   `username` varchar(20) NOT NULL,
@@ -52,7 +52,7 @@ INSERT INTO `admin_table` (`aid`, `first_name`, `last_name`, `username`, `passwo
 --
 
 CREATE TABLE IF NOT EXISTS `project_table` (
-  `pid` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `Team_Name` varchar(20) NOT NULL,
   `Department` varchar(70) NOT NULL,
   `Academic_year` varchar(10) NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `project_table` (
 --
 
 CREATE TABLE IF NOT EXISTS `team_table` (
-  `tid` int(11) NOT NULL AUTO_INCREMENT,
+  `tid` int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   `Team_name` varchar(50) NOT NULL,
   `Team_Leader` varchar(20) NOT NULL,
   `Team_Member1` varchar(20) NOT NULL,
